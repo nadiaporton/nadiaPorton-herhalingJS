@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dag van de week</title>
+</head>
+
+<body>
+    <script>
+        var weekdag = prompt("Geef een weekdag");
+
+        if (weekdag == null) {
+            document.write("U heeft geannulleerd!");
+
+        } else if (weekdag.length == 0) {
+            document.write("U heeft geen gegevens ingevuld!");
+
+        } else if (weekdag == 'maandag' || weekdag == 'dinsdag' || weekdag == 'woensdag' || weekdag == 'donderdag' || weekdag == 'vrijdag') {
+            document.write("Helaas, het is een werkdag!");
+
+        } else if (weekdag == 'zaterdag' || weekdag == 'zondag') {
+            document.write("Hoera, het is weekend!");
+
+        } else if (weekdag != 'maandag' || weekdag != 'dinsdag' || weekdag != 'woensdag' || weekdag != 'donderdag' || weekdag != 'vrijdag' || weekdag != 'zaterdag' || weekdag != 'zondag') {
+            document.write("U heeft geen weekdag ingegeven met de juiste schrijfwijze!");
+        }
+
+    </script>
+</body>
+
+</html>
